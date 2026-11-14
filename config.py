@@ -2,7 +2,7 @@ import os
 
 BRAND_NAME = "THE UNKNOWN FILES"
 VIDEO_SECONDS = 38
-DEFAULT_VIDEO_COUNT = 1
+DEFAULT_VIDEO_COUNT = 5
 WIDTH, HEIGHT = 1080, 1920
 FPS = 30
 # Voices rotate across videos; the same voice is not used twice in one batch if possible.
