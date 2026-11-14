@@ -1,7 +1,7 @@
 import asyncio, math, random, struct, wave, subprocess
 from pathlib import Path
 import requests, edge_tts
-from .config import *
+from config import *
 
 def run(cmd):
     print("RUN", " ".join(map(str,cmd)))
