@@ -105,7 +105,8 @@ async def make_voice(text, dest, voice):
 
                 communicate = edge_tts.Communicate(
                     text,
-                    selected_voice
+                    selected_voice,
+                    boundary="WordBoundary"
                 )
 
                 audio_data = bytearray()
