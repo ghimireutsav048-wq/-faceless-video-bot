@@ -1,5 +1,5 @@
 import json, os, re, time, requests
-from .config import GEMINI_API_KEY, VIDEO_SECONDS
+from config import GEMINI_API_KEY, VIDEO_SECONDS
 
 FALLBACK = [
  {"topic":"The Antikythera mechanism","angle":"An ancient Greek device that modelled astronomical cycles","fact_pack":"The Antikythera mechanism is an ancient Greek geared device recovered from a shipwreck near Antikythera. Research describes it as an ancient astronomical calculator. Avoid claiming it is the world's first computer without qualification.","source_url":"https://www.nature.com/articles/444534a"},
