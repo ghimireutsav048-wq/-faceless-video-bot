@@ -138,7 +138,7 @@ SOURCE:
     except Exception as error:
         print("Gemini unavailable:", str(error))
         return None
-      def make_batch(count):
+def make_batch(count):
     results = []
 
     for i in range(count):
