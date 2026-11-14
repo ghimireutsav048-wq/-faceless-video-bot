@@ -104,6 +104,7 @@ Make the story frightening, original and highly engaging.
             "generationConfig": {
                 "temperature": 0.9,
                 "responseMimeType": "application/json"
+                "maxOutputTokens": 8192
             }
         },
         timeout=120
