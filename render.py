@@ -119,12 +119,15 @@ async def make_voice(text, dest, voice):
 
                     elif event["type"] == "WordBoundary":
 
-                        data = event["data"]
+                        data = event.get("data", {})
+
+                        if not data:
+                            continue
 
                         word_boundaries.append({
-                            "start": data["offset"] / 10000000,
-                            "duration": data["duration"] / 10000000,
-                            "text": data["text"]
+                            "start": data.get("offset", 0) / 10000000,
+                            "duration": data.get("duration", 0) / 10000000,
+                            "text": data.get("text", "")
                         })
 
                 if len(audio_data) > 1000 and word_boundaries:
