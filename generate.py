@@ -103,7 +103,7 @@ Make the story frightening, original and highly engaging.
             "contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {
                 "temperature": 0.9,
-                "responseMimeType": "application/json"
+                "responseMimeType": "application/json",
                 "maxOutputTokens": 8192
             }
         },
